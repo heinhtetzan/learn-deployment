@@ -8,7 +8,7 @@ For a **Full-Stack Developer managing servers** or a **DevOps/System Admin**, un
 
 ---
 
-# 1. The Root Problem: Mutable Infrastructure (Pet Servers)
+# 1. The Root Problem: Mutable Infrastructure
 
 Traditionally, servers are treated like **pets**.
 
@@ -67,11 +67,9 @@ These unique servers are often called **Snowflake Servers** because every server
 
 ---
 
-# 2. The Solution: Immutable Infrastructure (Cattle Servers)
+# 2. The Solution: Immutable Infrastructure
 
 Immutable means **cannot be changed after creation**.
-
-Instead of treating servers like pets, we treat them like **cattle**.
 
 If one cow becomes unhealthy, we don't spend hours treating it.
 
@@ -175,8 +173,6 @@ Load Balancer
  ┌───────┬───────┬───────┐
  │       │       │
 Server1 Server2 Server3
-Laravel  Laravel  Laravel
-Next.js  Next.js  Next.js
 ```
 
 All servers are identical because they come from the same image.
@@ -379,13 +375,3 @@ The philosophy is simple:
 Don't patch servers.
 Replace them.
 ```
-
----
-
-If you want, I can also help you turn this into a **much more advanced article (Senior DevOps level)** explaining:
-
-• **Blue-Green deployment**
-• **Canary deployment**
-• **Zero-downtime deployment with Nginx + Laravel + Next.js**
-
-Those concepts connect directly to **immutable infrastructure**.
